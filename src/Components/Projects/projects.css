@@ -1,0 +1,31 @@
+.project-description-container {
+	background-color: white !important;
+}
+
+@media (max-width: 650px) {
+	.card {
+		width: 80rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.card {
+		width: 60rem;
+	}
+}
+
+@media (max-width: 1099px) {
+	.card {
+		width: 55rem;
+	}
+}
+
+@media (min-width: 1100px) {
+	.card {
+		width: 30rem;
+	}
+}
+
+.shadowCss {
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}

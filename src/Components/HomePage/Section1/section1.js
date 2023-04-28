@@ -1,0 +1,77 @@
+import React, { useState, useEffect } from 'react'
+import "./section1.css"
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+// import Background_4_f_Videvo from '../../../Assets/Images/Background_4_f_Videvo.mp4';
+import headshot_pic from '../../../Assets/Images/headshot-profile-pic-200px.png'
+
+
+const Section1 = () => {
+	return (
+		<>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+			<div className="row mx-auto" id="section1Container">
+				{/* <div class="mx-auto bg-white d-flex justify-content-center align-items-center profile-card-social-section">
+					<FaGithub class="txt-8 mx-3" />
+					<FaLinkedin class="txt-8 mx-3" />
+					<FaFacebook class="txt-8 mx-3" />
+				</div> */}
+				<div className="d-flex flex-column flex-md-row px-0">
+					<div className="col-12 col-md-5 left-column-container">
+						<div className="row mx-auto my-5 py-5">
+							<div className="w-90 w-sm-75 w-lg-90 mx-auto profile-card px-0">
+								<div className="row mx-auto pt-5">
+									<div className="col-12 d-flex justify-content-center pb-4">
+										<img src={headshot_pic} className="profile-pic" style={{ borderRadius: '50%' }} />
+									</div>
+									<div className="col-12 d-flex justify-content-center txt-8 font-weight-800 text-center pb-4" style={{ letterSpacing: '0.18vw' }}>
+										Danish<br />Mohiuddin
+									</div>
+									<div className="col-2 mx-auto" style={{ borderBottom: '2px solid black' }}></div>
+									<div className="col-12 d-flex justify-content-center txt-5 py-4">
+										SOFTWARE ENGINEER
+									</div>
+									<div className="col-12 d-flex justify-content-evenly align-items-center bg-white profile-card mt-4">
+										<div className="row mx-auto d-flex align-items-center py-3">
+											<div class="col-4">
+												<a href="https://github.com/danishm4557" target="_blank" class="text-black social-link"><FaGithub class="txt-8 mx-3" /></a>
+											</div>
+											<div class="col-4">
+												<a href="https://www.linkedin.com/in/danishmohiuddin/" target="_blank" class="text-black social-link"><FaLinkedin class="txt-8 mx-3" /></a>
+											</div>
+											<div class="col-4">
+												<a href="https://www.instagram.com/natureintel/" target="_blank" class="text-black social-link"><FaInstagram class="txt-8 mx-3" /></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="col-12 col-md-7 right-column-container">
+						<div className="row mx-auto w-80 w-lg-70 w-xl-60 my-5 py-5">
+							<div className="col-12">
+								<span className="font-weight-900 hello-text">Hello</span>
+								<div className="mb-5 px-1 txt-5 font-weight-600">
+									I build things for the web.
+								</div>
+								<div className="mb-5 px-1">
+									<button className="btn btn-primary resume-btn">RESUME</button>
+									<button className="btn btn-outline-primary projects-btn mx-3">PROJECTS</button>
+								</div>
+								<div className="mb-5 px-1 intro-div">
+									I'm a Chicago-based software engineer who specializes in designing and building exceptional digital experiences. Currently, I'm freelancing various projects focused on accessible, human-centered products. I take pride in my work as it revolves around creating solutions for unnecessary problems and making each user's experience a pleasant one.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</div >
+		</>
+	)
+}
+
+export default Section1;

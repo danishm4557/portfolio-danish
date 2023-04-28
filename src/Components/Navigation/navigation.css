@@ -1,0 +1,40 @@
+.nameNav, .jobTitleNav {
+	letter-spacing: 0.18vw;
+}
+
+.menuNav {
+	overflow-y: scroll;
+	list-style: none;
+	position: absolute;
+	top: 16vh;
+	background: #282c34;
+	right: 0;
+	bottom: 0;
+	height: 25vh;
+	width: 0;
+	overflow: hidden;
+	max-width: 250px;
+	z-index: 9;
+	padding-inline-start: 0px;
+	border-bottom-left-radius: 13% 20%;
+  }
+
+  .menuNav.showMenu {
+	width: 75%;
+	transition: all 200ms ease-in;
+  }
+
+  .menuNav:not(.showMenu) {
+	transition: all 200ms ease-out;
+  }
+
+  .menuNav li {
+	margin-top: 1rem;
+	position: relative;
+	left: 0%;
+  }
+
+  .nav-link:hover {
+	font-weight: 600;
+  }
+
