@@ -22,24 +22,24 @@ const Footer = () => {
 							<div className="d-flex row justify-content-center font-weight-600 mb-1 mb-md-3">Email</div>
 							<div className="d-flex row justify-content-center pt-1 text-break">danishm4557@gmail.com</div>
 						</div>
-						<div className="col-4">
+						<div className="col-8 col-sm-4">
 							<div className="d-flex row mx-auto justify-content-center font-weight-600 mb-1 mb-md-3">Follow</div>
 							<div className="row mx-auto pt-1">
 								<div className="col-12 pr-0">
 									<div className="row mx-auto">
 										<div className="col-4 border-right-white">
 											<div className="row">
-												<a href="https://github.com/danishm4557" target="_blank" class="text-white social-link"><FaGithub class="txt-5 px-0" /></a>
+												<a href="https://github.com/danishm4557" target="_blank" className="text-white social-link"><FaGithub className="txt-5 px-0" /></a>
 											</div>
 										</div>
 										<div className="col-4 border-right-white">
 											<div className="row">
-												<a href="https://www.linkedin.com/in/danishmohiuddin/" target="_blank" class="text-white social-link"><FaLinkedin class="txt-5 px-0" /></a>
+												<a href="https://www.linkedin.com/in/danishmohiuddin/" target="_blank" className="text-white social-link"><FaLinkedin className="txt-5 px-0" /></a>
 											</div>
 										</div>
 										<div className="col-4">
 											<div className="row">
-												<a href="https://www.instagram.com/natureintel/" target="_blank" class="text-white social-link"><FaInstagram class="txt-5 px-0" /></a>
+												<a href="https://www.instagram.com/natureintel/" target="_blank" className="text-white social-link"><FaInstagram className="txt-5 px-0" /></a>
 											</div>
 										</div>
 									</div>

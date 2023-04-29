@@ -10,7 +10,7 @@ import Contact from './Components/Contact/contact';
 function App() {
   return (
     <div className="App">
-      <div class="">
+      <div className="">
         <Router>
           <header className="App-header">
             <Navigation />

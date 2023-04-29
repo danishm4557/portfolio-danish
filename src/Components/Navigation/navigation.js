@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import "./navigation.css"
 
 
-const Navigation = () => {
+const Navigation = (props) => {
 
 	const [navbarOpen, setNavbarOpen] = useState(false)
 
@@ -17,6 +17,7 @@ const Navigation = () => {
 		setNavbarOpen(false);
 	}
 
+	const pathname = useLocation().pathname;
 
 	return (
 		<>
@@ -40,15 +41,15 @@ const Navigation = () => {
 
 						{/* Medium and Larger Screens */}
 						<div className="col-12 d-none d-md-flex">
-							<Link className="nav-link active px-3 txt-3 text-nowrap border-right-white" to="/">ABOUT ME</Link>
-							<Link className="nav-link px-3 txt-3 border-right-white" to="/resume">RESUME</Link>
-							<Link className="nav-link px-3 txt-3 border-right-white" to="/projects">PROJECTS</Link>
-							<Link className="nav-link px-3 txt-3" to="/contact">CONTACT</Link>
+							<Link className={`nav-link px-3 txt-3 text-nowrap border-right-white ${pathname == '/' ? "active" : ""}`} to="/">ABOUT ME</Link>
+							<Link className={`nav-link px-3 txt-3 border-right-white ${pathname == '/resume' ? "active" : ""}`} to="/resume">RESUME</Link>
+							<Link className={`nav-link px-3 txt-3 border-right-white ${pathname == '/projects' ? "active" : ""}`} to="/projects">PROJECTS</Link>
+							<Link className={`nav-link px-3 txt-3 ${pathname == '/contact' ? "active" : ""}`} to="/contact">CONTACT</Link>
 						</div>
 
 						{/* Smaller Screens */}
 						<div className="col-12 d-flex d-md-none">
-							<button class="btn btn-link txt-7 text-white" onClick={handleToggle}>{navbarOpen ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}</button>
+							<button className="btn btn-link txt-7 text-white" onClick={handleToggle}>{navbarOpen ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}</button>
 						</div>
 
 					</div>

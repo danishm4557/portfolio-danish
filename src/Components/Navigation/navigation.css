@@ -10,7 +10,7 @@
 	background: #282c34;
 	right: 0;
 	bottom: 0;
-	height: 25vh;
+	height: 33vh;
 	width: 0;
 	overflow: hidden;
 	max-width: 250px;
@@ -34,7 +34,28 @@
 	left: 0%;
   }
 
-  .nav-link:hover {
-	font-weight: 600;
+  .active {
+	border-bottom: 2px solid #0082ca
+  }
+  .nav-link {
+	display: inline-block;
+	position: relative;
   }
 
+  .nav-link::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #0087ca;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+  }
+
+  .nav-link:not(.active):hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }

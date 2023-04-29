@@ -8,12 +8,12 @@ import headshot_pic from '../../../Assets/Images/headshot-profile-pic-200px.png'
 const Section1 = () => {
 	return (
 		<>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossOrigin="anonymous"></script>
 			<div className="row mx-auto" id="section1Container">
-				{/* <div class="mx-auto bg-white d-flex justify-content-center align-items-center profile-card-social-section">
-					<FaGithub class="txt-8 mx-3" />
-					<FaLinkedin class="txt-8 mx-3" />
-					<FaFacebook class="txt-8 mx-3" />
+				{/* <div className="mx-auto bg-white d-flex justify-content-center align-items-center profile-card-social-section">
+					<FaGithub className="txt-8 mx-3" />
+					<FaLinkedin className="txt-8 mx-3" />
+					<FaFacebook className="txt-8 mx-3" />
 				</div> */}
 				<div className="d-flex flex-column flex-md-row px-0">
 					<div className="col-12 col-md-5 left-column-container">
@@ -32,14 +32,14 @@ const Section1 = () => {
 									</div>
 									<div className="col-12 d-flex justify-content-evenly align-items-center bg-white profile-card mt-4">
 										<div className="row mx-auto d-flex align-items-center py-3">
-											<div class="col-4">
-												<a href="https://github.com/danishm4557" target="_blank" class="text-black social-link"><FaGithub class="txt-8 mx-3" /></a>
+											<div className="col-4">
+												<a href="https://github.com/danishm4557" target="_blank" className="text-black social-link"><FaGithub className="txt-8 mx-3" /></a>
 											</div>
-											<div class="col-4">
-												<a href="https://www.linkedin.com/in/danishmohiuddin/" target="_blank" class="text-black social-link"><FaLinkedin class="txt-8 mx-3" /></a>
+											<div className="col-4">
+												<a href="https://www.linkedin.com/in/danishmohiuddin/" target="_blank" className="text-black social-link"><FaLinkedin className="txt-8 mx-3" /></a>
 											</div>
-											<div class="col-4">
-												<a href="https://www.instagram.com/natureintel/" target="_blank" class="text-black social-link"><FaInstagram class="txt-8 mx-3" /></a>
+											<div className="col-4">
+												<a href="https://www.instagram.com/natureintel/" target="_blank" className="text-black social-link"><FaInstagram className="txt-8 mx-3" /></a>
 											</div>
 										</div>
 									</div>
