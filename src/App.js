@@ -6,6 +6,7 @@ import Projects from './Components/Projects/projects';
 import Footer from '../src/Components/Footer/footer';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Contact from './Components/Contact/contact';
+import Resume from './Components/Resume/resume';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/" element={<HomePage />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
           </Routes>
           <footer className="App-footer">
             <Footer />

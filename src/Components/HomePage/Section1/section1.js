@@ -10,11 +10,6 @@ const Section1 = () => {
 		<>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossOrigin="anonymous"></script>
 			<div className="row mx-auto" id="section1Container">
-				{/* <div className="mx-auto bg-white d-flex justify-content-center align-items-center profile-card-social-section">
-					<FaGithub className="txt-8 mx-3" />
-					<FaLinkedin className="txt-8 mx-3" />
-					<FaFacebook className="txt-8 mx-3" />
-				</div> */}
 				<div className="d-flex flex-column flex-md-row px-0">
 					<div className="col-12 col-md-5 left-column-container">
 						<div className="row mx-auto my-5 py-5">
@@ -65,10 +60,6 @@ const Section1 = () => {
 						</div>
 					</div>
 				</div>
-
-
-
-
 			</div >
 		</>
 	)
