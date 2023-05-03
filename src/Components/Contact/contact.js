@@ -28,7 +28,7 @@ const Contact = () => {
 				</div>
 				<form onSubmit={sendEmail} className={`${emailSent ? "d-none" : ""}`}>
 					<div className="row mx-auto justify-content-center mt-3 pb-5">
-						<div className="col-10 col-md-8 bg-white py-3 mb-5 shadow-lg rounded">
+						<div className="col-11 col-md-8 bg-white py-3 mb-5 shadow-lg rounded">
 							<div className="form-row mx-auto py-3">
 								<div className="form-group col-md-6">
 									<label htmlFor="firstName" className="pl-1">First Name <span className="text-primary">*</span></label>

@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from 'react-router-dom';
+import OutsideClick from './outsideClick';
 import "./navigation.css"
 
 
 const Navigation = (props) => {
 
 	const [navbarOpen, setNavbarOpen] = useState(false)
+	const navRef = useRef(null);
+	const navOutsideClick = OutsideClick(navRef);
 
 	const handleToggle = () => {
 		setNavbarOpen(prev => !prev)
@@ -27,10 +30,10 @@ const Navigation = (props) => {
 				<div className="col-6 text-start">
 					<div className="row txt-5 mx-3">
 						<div className="nameNav col-12 col-sm-5 col-md-4 col-lg-3 font-weight-800">
-							Danish <br /> Mohiuddin
+							<Link className="text-white text-decoration-none" to="/">Danish <br /> Mohiuddin</Link>
 						</div>
 						<div className="jobTitleNav mx-0 mx-sm-3 mx-xl-0 col-12 col-sm-5 col-md-4 col-lg-3 txt-3 d-flex align-items-center text-nowrap">
-							/ SOFTWARE ENGINEER
+							<Link className="text-white text-decoration-none" to="/">/ SOFTWARE ENGINEER</Link>
 						</div>
 					</div>
 				</div>
@@ -56,7 +59,7 @@ const Navigation = (props) => {
 				</div>
 			</div >
 
-			<ul className={`d-block d-md-none menuNav pl-0 ${navbarOpen ? " showMenu" : ""}`}>
+			<ul className={`d-block d-md-none menuNav pl-0 ${navbarOpen ? " showMenu" : ""}`} ref={navRef}>
 				<Link to="/" className="txt-3 nav-link text-center" onClick={handleToggle}><li>ABOUT ME</li></Link>
 				<Link to="/resume" className="txt-3 nav-link text-center" onClick={handleToggle}><li>RESUME</li></Link>
 				<Link to="/projects" className="txt-3 nav-link text-center" onClick={handleToggle}><li>PROJECTS</li></Link>
