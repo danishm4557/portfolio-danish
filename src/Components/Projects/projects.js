@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import travelLogicImg from '../../Assets/Images/travelLogic-portfolio-img.jpg'
 import crimeFlix from '../../Assets/Images/crimeFlix.jpg'
+import SLAndBridge from '../../Assets/Images/SLandBridge.jpg'
 import './projects.css';
 
 const Projects = () => {
@@ -35,9 +36,29 @@ const Projects = () => {
 								<div className="d-flex flex-column py-3 lh-lg">
 									<li>Being part of a small team, I was required to wear many hats at work. Worked in both front-end (utilized Bootstrap and JQuery) and back-end (utilized MySQL).</li>
 									<li>With no prior experience using ColdFusion, I was required to learn ColdFusion very quickly on the job. My seniors were impressed with how quickly I was able to learn the language and effectively contribute to our codebase.</li>
-									<li>Completed 410 tasks to date (01/28/2022). Every task was designed to be responsive. Confirmed every new feature I implement looked excellent on both mobile and desktop. When I noticed other previously built features which did not look great on mobile or desktop, I always went out of my way to fix it so it looks as expected on all viewports.</li>
+									<li>Completed 600 tasks to date (05/3/2023). Every task was designed to be responsive. Confirmed every new feature I implement looked excellent on both mobile and desktop. When I noticed other previously built features which did not look great on mobile or desktop, I always went out of my way to fix it so it looks as expected on all viewports.</li>
 									<li>With some prior experience using PostgreSQL, I had no issues transitioning to MySQL. Worked with a large database of customers, retailers, brands, sales reps, etc.</li>
 									<li>Continuous communication with seniors, other teammates, and CEO of company. Also participated in a Developer's meeting every Monday morning where I shared with the team what tasks I had been working on and what new features should be implement to improve the software. As a team, we also enjoyed a lot of football conversations.</li>
+								</div>
+							</div>
+							<div className="col-12 col-md-4 px-0 shadowCss">
+								<img src={SLAndBridge} className="w-100 h-100" />
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* PocketGuru */}
+				<div className="d-flex justify-content-center align-items-center align-items-md-start mx-auto pb-5">
+					<div className="col-12 col-sm-10 col-md-12 col-lg-10">
+						<div className="d-flex flex-column flex-md-row justify-content-center mx-auto">
+							<div className="col-12 col-md-6 bg-white shadowCss">
+								<div className="txt-6 font-weight-700 text-primary py-2">PocketGuru</div>
+								<div className="d-flex">
+									<a href="https://github.com/danishm4557/PocketGuru" target="_blank" className="text-black font-weight-600" style={{ textDecoration: 'underline' }}>View on Github</a>
+									<a href="https://travel-logic-frontend.herokuapp.com/" target="_blank" className="text-black mx-3 font-weight-600 link-offset-1" style={{ textDecoration: 'underline' }}>Deployed Application</a>
+								</div>
+								<div className="d-flex py-3 lh-lg">
+									PocketGuru consists of a collection of simple mobile applications that include a calculator, weather app, news app, and others. For this project, I used React.js to create multiple components for each application. Each component has its own functionality and user interface. By breaking down each application into individual components, I was able to create a clean and modular codebase that can be easily extended and customized in the future.<br />Purpose behind one project consisting of multiple small projects is so I can demonstrate my skills and ability to create anything from scratch.
 								</div>
 							</div>
 							<div className="col-12 col-md-4 px-0 shadowCss">
@@ -68,7 +89,7 @@ const Projects = () => {
 				</div>
 				{/* CrimeFlix */}
 				<div className="d-flex justify-content-center align-items-center align-items-md-start mx-auto pb-5">
-					<div className="col-12 col-sm-10 col-md-12 col-lg-10">
+					<div className="col-12 col-sm-10 col-md-12 col-lg-10 pb-3">
 						<div className="d-flex flex-column flex-md-row justify-content-center mx-auto">
 							<div className="col-12 col-md-6 bg-white shadowCss">
 								<div className="txt-6 font-weight-700 text-primary py-2">CrimeFlix</div>
