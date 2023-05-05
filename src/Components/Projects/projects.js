@@ -28,7 +28,7 @@ const Projects = () => {
 					<div className="col-12 col-sm-10 col-md-12 col-lg-10">
 						<div className="d-flex flex-column flex-md-row justify-content-center mx-auto">
 							<div className="col-12 col-md-6 bg-white shadowCss">
-								<div className="txt-6 font-weight-700 text-primary pt-2">Bridge ShopLocal</div>
+								<div className="txt-6 font-weight-700 text-primary pt-2">Bridge Shop Local</div>
 								<div className="pb-2">Current Position</div>
 								<div className="d-flex">
 									<a href="https://shoplocal.org" target="_blank" className="text-black font-weight-600" style={{ textDecoration: 'underline' }}>Sales Site</a>
@@ -53,7 +53,7 @@ const Projects = () => {
 					<div className="col-12 col-sm-10 col-md-12 col-lg-10">
 						<div className="d-flex flex-column flex-md-row justify-content-center mx-auto">
 							<div className="col-12 col-md-6 bg-white shadowCss">
-								<div className="txt-6 font-weight-700 text-primary py-2">PocketGuru</div>
+								<div className="txt-6 font-weight-700 text-primary py-2">Pocket Guru</div>
 								<div className="d-flex">
 									<a href="https://github.com/danishm4557/PocketGuru" target="_blank" className="text-black font-weight-600" style={{ textDecoration: 'underline' }}>View on Github</a>
 									<a href="https://travel-logic-frontend.herokuapp.com/" target="_blank" className="text-black mx-3 font-weight-600 link-offset-1" style={{ textDecoration: 'underline' }}>Deployed Application</a>
@@ -73,7 +73,7 @@ const Projects = () => {
 					<div className="col-12 col-sm-10 col-md-12 col-lg-10">
 						<div className="d-flex flex-column flex-md-row justify-content-center mx-auto">
 							<div className="col-12 col-md-6 bg-white shadowCss">
-								<div className="txt-6 font-weight-700 text-primary py-2">TravelLogic</div>
+								<div className="txt-6 font-weight-700 text-primary py-2">Travel Logic</div>
 								<div className="d-flex">
 									<a href="https://github.com/danishm4557/TravelLogic-Frontend1" target="_blank" className="text-black font-weight-600" style={{ textDecoration: 'underline' }}>View on Github</a>
 									<a href="https://travel-logic-frontend.herokuapp.com/" target="_blank" className="text-black mx-3 font-weight-600 link-offset-1" style={{ textDecoration: 'underline' }}>Deployed Application</a>
