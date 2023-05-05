@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import Helmet from 'react-helmet';
 import emailjs from '@emailjs/browser';
 import './contact.css';
 
@@ -18,6 +19,11 @@ const Contact = () => {
 
 	return (
 		<>
+			<Helmet>
+				<title>Contact - Danish Mohiuddin</title>
+				<meta name="description" content="CodeWithDanish is the website name of Danish Mohiuddin's Software Engineering portfolio showcasing many web dev projects and updated resume. Get in touch today using the contact form." />
+				<meta name="theme-color" content="#008f68" />
+			</Helmet>
 			<div style={{ backgroundColor: 'rgba(230, 218, 206, 1)' }}>
 				<div className="row mx-auto">
 					<div className="col-12">

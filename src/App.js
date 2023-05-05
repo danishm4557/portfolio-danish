@@ -7,10 +7,16 @@ import Footer from '../src/Components/Footer/footer';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Contact from './Components/Contact/contact';
 import Resume from './Components/Resume/resume';
+import Helmet from 'react-helmet';
 
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <title>Portfolio - Danish Mohiuddin</title>
+        <meta name="description" content="CodeWithDanish is the website name of Danish Mohiuddin's Software Engineering portfolio showcasing many web dev projects and updated resume. Get in touch today using the contact form." />
+        <meta name="theme-color" content="#008f68" />
+      </Helmet>
       <div className="">
         <Router>
           <header className="App-header">
