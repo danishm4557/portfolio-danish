@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react';
-import Helmet from 'react-helmet';
+// import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import emailjs from '@emailjs/browser';
 import './contact.css';
 
@@ -19,11 +20,13 @@ const Contact = () => {
 
 	return (
 		<>
-			<Helmet>
-				<title>Contact - Danish Mohiuddin</title>
-				<meta name="description" content="CodeWithDanish is the website name of Danish Mohiuddin's Software Engineering portfolio showcasing many web dev projects and updated resume. Get in touch today using the contact form." />
-				<meta name="theme-color" content="#008f68" />
-			</Helmet>
+			<HelmetProvider>
+				<Helmet>
+					<title>Contact - Danish Mohiuddin</title>
+					<meta name="description" content="CodeWithDanish is the website name of Danish Mohiuddin's Software Engineering portfolio showcasing many web dev projects and updated resume. Get in touch today using the contact form." />
+					<meta name="theme-color" content="#008f68" />
+				</Helmet>
+			</HelmetProvider>
 			<div style={{ backgroundColor: 'rgba(230, 218, 206, 1)' }}>
 				<div className="row mx-auto">
 					<div className="col-12">
@@ -38,11 +41,11 @@ const Contact = () => {
 							<div className="form-row mx-auto py-3">
 								<div className="form-group col-md-6">
 									<label htmlFor="firstName" className="pl-1">First Name <span className="text-primary">*</span></label>
-									<input type="text" name="firstName" id="firstName" className="form-control" placeholder="First Name" />
+									<input type="text" name="firstName" id="firstName" className="form-control" placeholder="John" />
 								</div>
 								<div className="form-group col-md-6">
 									<label htmlFor="lastName" className="pl-1">Last Name <span className="text-primary">*</span></label>
-									<input type="text" name="lastName" id="lastName" className="form-control" placeholder="Last Name" />
+									<input type="text" name="lastName" id="lastName" className="form-control" placeholder="Doe" />
 								</div>
 							</div>
 							<div className="form-row mx-auto pb-3">

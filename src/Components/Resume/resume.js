@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react';
-import Helmet from 'react-helmet';
+// import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { FaDownload, FaLinkedin, FaInstagram } from 'react-icons/fa';
 // import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import resumePdf from '../../Assets/Resume - Danish Mohiuddin2.pdf'
@@ -14,11 +15,13 @@ const Resume = () => {
 
 	return (
 		<>
-			<Helmet>
-				<title>Resume - Danish Mohiuddin</title>
-				<meta name="description" content="CodeWithDanish is the website name of Danish Mohiuddin's Software Engineering portfolio showcasing many web dev projects and updated resume. Get in touch today using the contact form." />
-				<meta name="theme-color" content="#008f68" />
-			</Helmet>
+			<HelmetProvider>
+				<Helmet>
+					<title>Resume - Danish Mohiuddin</title>
+					<meta name="description" content="CodeWithDanish is the website name of Danish Mohiuddin's Software Engineering portfolio showcasing many web dev projects and updated resume. Get in touch today using the contact form." />
+					<meta name="theme-color" content="#008f68" />
+				</Helmet>
+			</HelmetProvider>
 			<div style={{ backgroundColor: 'rgba(230, 218, 206, 1)' }}>
 				<div className="row mx-auto">
 					<div className="col-4">

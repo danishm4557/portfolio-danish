@@ -10,7 +10,7 @@ const Footer = () => {
 				</div>
 				<div className="col-12 d-block d-sm-none my-3">
 					<div className="d-flex row mx-auto justify-content-center font-weight-600 mb-1 mb-md-3">Email</div>
-					<div className="d-flex row mx-auto justify-content-center pt-1 text-break">danishm4557@gmail.com</div>
+					<div className="d-flex row mx-auto justify-content-center pt-1 text-break"><a href="mailto:danishm4557@gmail.com" className="text-white text-decoration-underline text-center">danishm4557@gmail.com</a></div>
 				</div>
 				<div className="col-12 col-md-8">
 					<div className="d-flex row-mx-auto justify-content-evenly align-items-end text-center txt-3">
@@ -20,7 +20,7 @@ const Footer = () => {
 						</div>
 						<div className="col-4 d-none d-sm-block ">
 							<div className="d-flex row justify-content-center font-weight-600 mb-1 mb-md-3">Email</div>
-							<div className="d-flex row justify-content-center pt-1 text-break">danishm4557@gmail.com</div>
+							<div className="d-flex row justify-content-center pt-1 text-break"><a href="mailto:danishm4557@gmail.com" className="text-white text-decoration-underline text-center">danishm4557@gmail.com</a></div>
 						</div>
 						<div className="col-8 col-sm-4">
 							<div className="d-flex row mx-auto justify-content-center font-weight-600 mb-1 mb-md-3">Follow</div>

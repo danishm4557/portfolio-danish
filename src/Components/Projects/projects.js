@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Helmet from 'react-helmet';
+// import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import travelLogicImg from '../../Assets/Images/travelLogic-portfolio-img.jpg'
 import crimeFlix from '../../Assets/Images/crimeFlix.jpg'
 import SLAndBridge from '../../Assets/Images/SLandBridge.jpg'
@@ -9,11 +10,13 @@ import './projects.css';
 const Projects = () => {
 	return (
 		<>
-			<Helmet>
-				<title>Projects - Danish Mohiuddin</title>
-				<meta name="description" content="CodeWithDanish is the website name of Danish Mohiuddin's Software Engineering portfolio showcasing many web dev projects and updated resume. Get in touch today using the contact form." />
-				<meta name="theme-color" content="#008f68" />
-			</Helmet>
+			<HelmetProvider>
+				<Helmet>
+					<title>Projects - Danish Mohiuddin</title>
+					<meta name="description" content="CodeWithDanish is the website name of Danish Mohiuddin's Software Engineering portfolio showcasing many web dev projects and updated resume. Get in touch today using the contact form." />
+					<meta name="theme-color" content="#008f68" />
+				</Helmet>
+			</HelmetProvider>
 			<div style={{ backgroundColor: 'rgba(230, 218, 206, 1)' }}>
 				<div className="row mx-auto">
 					<div className="col-12">
@@ -114,8 +117,6 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
-
-
 			</div>
 		</>
 	)

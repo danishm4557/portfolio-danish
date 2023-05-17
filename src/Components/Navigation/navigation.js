@@ -1,8 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from 'react-router-dom';
-import OutsideClick from './outsideClick';
+import useOutsideAlerter from './outsideClick'
+
 import "./navigation.css"
 
 
@@ -10,21 +11,19 @@ const Navigation = (props) => {
 
 	const [navbarOpen, setNavbarOpen] = useState(false)
 	const navRef = useRef(null);
-	const navOutsideClick = OutsideClick(navRef);
 
 	const handleToggle = () => {
 		setNavbarOpen(prev => !prev)
 	}
 
-	const closeMenu = () => {
-		setNavbarOpen(false);
-	}
+	const wrapperRef = useRef(null);
+	useOutsideAlerter(wrapperRef);
 
 	const pathname = useLocation().pathname;
 
 	return (
 		<>
-			<div className="d-flex justify-content-between w-100">
+			<div className="d-flex justify-content-between w-100" ref={wrapperRef}>
 
 				{/* Left Side of Nav */}
 				<div className="col-6 text-start">
@@ -43,16 +42,16 @@ const Navigation = (props) => {
 					<div className="row txt-5 mx-3">
 
 						{/* Medium and Larger Screens */}
-						<div className="col-12 d-none d-md-flex">
-							<Link className={`nav-link px-3 txt-3 text-nowrap border-right-white ${pathname == '/' ? "active" : ""}`} to="/">ABOUT ME</Link>
-							<Link className={`nav-link px-3 txt-3 border-right-white ${pathname == '/resume' ? "active" : ""}`} to="/resume">RESUME</Link>
-							<Link className={`nav-link px-3 txt-3 border-right-white ${pathname == '/projects' ? "active" : ""}`} to="/projects">PROJECTS</Link>
-							<Link className={`nav-link px-3 txt-3 ${pathname == '/contact' ? "active" : ""}`} to="/contact">CONTACT</Link>
+						<div className="col-12 d-none d-md-flex px-0">
+							<Link className={`nav-link px-3 txt-3 text-nowrap border-right-white ${pathname === '/' ? "active" : ""}`} to="/">ABOUT ME</Link>
+							<Link className={`nav-link px-3 txt-3 border-right-white ${pathname === '/resume' ? "active" : ""}`} to="/resume">RESUME</Link>
+							<Link className={`nav-link px-3 txt-3 border-right-white ${pathname === '/projects' ? "active" : ""}`} to="/projects">PROJECTS</Link>
+							<Link className={`nav-link px-3 txt-3 ${pathname === '/contact' ? "active" : ""}`} to="/contact">CONTACT</Link>
 						</div>
 
 						{/* Smaller Screens */}
 						<div className="col-12 d-flex d-md-none">
-							<button className="btn btn-link txt-7 text-white" onClick={handleToggle}>{navbarOpen ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}</button>
+							<button className="btn btn-link txt-7 text-white" onClick={handleToggle}>{navbarOpen ? <FontAwesomeIcon icon={faXmark} style={{ fontSize: '1.5rem !important' }} /> : <FontAwesomeIcon icon={faBars} style={{ fontSize: '1.5rem' }} />}</button>
 						</div>
 
 					</div>
