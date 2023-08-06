@@ -53,8 +53,10 @@ const Section1 = () => {
 									I build things for the web.
 								</div>
 								<div className="mb-5 px-1">
-									<Link to="/resume" className="btn btn-primary resume-btn">RESUME</Link>
-									<Link to="/projects" className="btn btn-outline-dark projects-btn mx-3">PROJECTS</Link>
+									<a href="/resume" className="btn btn-primary resume-btn">RESUME</a>
+									<a href="/projects" className="btn btn-outline-dark projects-btn mx-3">PROJECTS</a>
+									{/* <Link to="/resume" className="btn btn-primary resume-btn">RESUME</Link>
+									<Link to="/projects" className="btn btn-outline-dark projects-btn mx-3">PROJECTS</Link> */}
 								</div>
 								<div className="mb-5 px-1 intro-div">
 									I'm a Chicago-based software engineer who specializes in designing and building exceptional digital experiences. Currently, I'm freelancing various projects focused on accessible, human-centered products. I take pride in my work as it revolves around creating solutions for unnecessary problems and making each user's experience a pleasant one.
