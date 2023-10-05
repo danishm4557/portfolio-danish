@@ -65,7 +65,7 @@ const Projects = () => {
 								<div className="txt-6 font-weight-700 text-primary py-2">Pocket Guru</div>
 								<div className="d-flex">
 									<a href="https://github.com/danishm4557/PocketGuru" target="_blank" className="text-black font-weight-600" style={{ textDecoration: 'underline' }}>View on Github</a>
-									<a href="https://travel-logic-frontend.herokuapp.com/" target="_blank" className="text-black mx-3 font-weight-600 link-offset-1" style={{ textDecoration: 'underline' }}>Deployed Application</a>
+									<a href="https://pocket-guru.onrender.com/" target="_blank" className="text-black mx-3 font-weight-600 link-offset-1" style={{ textDecoration: 'underline' }}>Deployed Application</a>
 								</div>
 								<div className="d-flex py-3 lh-lg">
 									PocketGuru consists of a collection of simple mobile applications that include a calculator, weather app, news app, and others. For this project, I used React.js to create multiple components for each application. Each component has its own functionality and user interface. By breaking down each application into individual components, I was able to create a clean and modular codebase that can be easily extended and customized in the future.<br />Reason behind one project consisting of multiple small projects is so I can demonstrate my skills and ability to create a broad range of application from scratch.
