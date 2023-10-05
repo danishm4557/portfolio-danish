@@ -57,7 +57,7 @@ const Section1 = () => {
 									<Link to="/projects" className="btn btn-outline-dark projects-btn mx-3">PROJECTS</Link>
 								</div>
 								<div className="mb-5 px-1 intro-div">
-									I'm a Chicago-based software engineer who specializes in designing and building exceptional digital experiences. Currently, I'm freelancing various projects focused on accessible, human-centered products. I take pride in my work as it revolves around creating solutions for unnecessary problems and making each user's experience a pleasant one.
+									I’m a Chicago-based software engineer who specializes in designing and building exceptional digital experiences. Currently, I’m remotely working for a company based in New York. My contributions to Shop Local’s codebase help retailers, brands, designers, and sales reps sync products with each other and offer them to local communities at competitive prices. Being part of a small team of five software engineers and five sales coaches, my responsibilities require me to wear many hats at work on a daily basis; Such as UX, coding, testing, writing articles, communicating with sales coaches and involved businesses, sharing promotional and growth ideas, etc.
 								</div>
 							</div>
 						</div>
