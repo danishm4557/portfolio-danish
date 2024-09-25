@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './Components/Navigation/navigation';
 import HomePage from './Components/HomePage/homePage';
 import Projects from './Components/Projects/projects';
 import Footer from '../src/Components/Footer/footer';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from './Components/Contact/contact';
 import Resume from './Components/Resume/resume';
 // import Helmet from 'react-helmet';

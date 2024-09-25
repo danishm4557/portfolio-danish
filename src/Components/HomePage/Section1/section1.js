@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "./section1.css"
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 // import Background_4_f_Videvo from '../../../Assets/Images/Background_4_f_Videvo.mp4';
-import headshot_pic from '../../../Assets/Images/headshot-profile-pic-200px.png'
+import headshot_pic from '../../../Assets/Images/profile-pic-400px.png'
 import { Link } from 'react-router-dom';
 
 
@@ -19,7 +19,7 @@ const Section1 = () => {
 							<div className="w-90 w-sm-75 w-lg-90 mx-auto profile-card px-0">
 								<div className="row mx-auto pt-5">
 									<div className="col-12 d-flex justify-content-center pb-4">
-										<img src={headshot_pic} className="profile-pic" style={{ borderRadius: '50%' }} />
+										<img src={headshot_pic} className="profile-pic" style={{ borderRadius: '50%', maxWidth: '200px' }} alt="Profile of Danish Mohiuddin" />
 									</div>
 									<div className="col-12 d-flex justify-content-center txt-8 font-weight-800 text-center pb-4" style={{ letterSpacing: '0.18vw' }}>
 										Danish<br />Mohiuddin
@@ -71,7 +71,7 @@ const Section1 = () => {
 								<div className="w-90 w-sm-75 w-lg-90 mx-auto profile-card px-0">
 									<div className="row mx-auto pt-5">
 										<div className="col-12 d-flex justify-content-center pb-4">
-											<img src={headshot_pic} className="profile-pic" style={{ borderRadius: '50%' }} />
+											<img src={headshot_pic} className="profile-pic" alt="Profile of Danish Mohiuddin" style={{ borderRadius: '50%', maxWidth: '200px' }} />
 										</div>
 										<div className="col-12 d-flex justify-content-center txt-8 font-weight-800 text-center pb-4" style={{ letterSpacing: '0.18vw' }}>
 											Danish<br />Mohiuddin
